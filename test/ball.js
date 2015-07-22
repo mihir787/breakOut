@@ -10,7 +10,13 @@ describe('Ball', function () {
     assert(new Ball());
   });
 
-  it('should bounce', function() {
+  it.skip('should be drawn', function() {
+    const ball = new Ball();
+    assert.equal(ball.size,  "75, 75, 10, 0, Math.PI*2, true")
+    assert.equal(ball.color,  "red")
+  });
+
+  it.skip('should bounce', function() {
     const ball = new Ball();
     var width = 300;
     var height = 300;
@@ -21,9 +27,4 @@ describe('Ball', function () {
     assert.equal()
   });
 
-  it.skip('should have properties including color and a circular shape', function() {
-    const ball = new Ball();
-    assert.equal(ball.size,  "75, 75, 10, 0, Math.PI*2, true")
-    assert.equal(ball.color,  "red")
-  });
 });
