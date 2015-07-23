@@ -16,15 +16,13 @@ describe('Ball', function () {
     assert.equal(ball.color,  "red")
   });
 
-  it.skip('should bounce', function() {
+  it('should have dimensions and position', function() {
     const ball = new Ball();
-    var width = 300;
-    var height = 300;
-    var x = 150;
-    var y = 150;
-    var horizontalSlope = 2;
-    var verticalSlope = 4;
-    assert.equal()
+    assert.equal(ball.x, 150);
+    assert.equal(ball.y, 150);
+    assert.equal(ball.radius, 10);
+    assert.equal(ball.xSlope, 2);
+    assert.equal(ball.ySlope, 4);
   });
 
 });

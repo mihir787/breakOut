@@ -25,7 +25,7 @@ describe('Bricks', function () {
     });
   });
 
-  it('should have five blocks in each row', function () {
+  it('should have five bricks in each row', function () {
     const bricks = new Bricks();
     const firstRow = bricks.collection[0];
     assert.equal(firstRow.length, 5);
@@ -33,4 +33,5 @@ describe('Bricks', function () {
     assert.instanceOf(firstBrick, Brick)
   });
 
+  
 });

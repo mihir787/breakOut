@@ -10,7 +10,7 @@ describe('Paddle', function () {
     assert(new Paddle());
   });
 
-  it('should have initialize with position and dimensions', function () {
+  it('should initialize with position and dimensions', function () {
     const paddle = (new Paddle());
     assert.equal(paddle.x, 250);
     assert.equal(paddle.y, 480);
