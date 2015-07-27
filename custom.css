@@ -1,0 +1,16 @@
+body{
+  background-image: url('http://www.danielleemusicstudio.com/wp-content/uploads/2014/05/simple-background-12.jpg');
+}
+
+.title {
+  text-align: center;
+  color: white;
+}
+
+#canvas {
+  margin-left: 30%;
+}
+
+.start {
+  text-align: center;
+}
