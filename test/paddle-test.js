@@ -12,8 +12,8 @@ describe('Paddle', function () {
 
   it('should initialize with position and dimensions', function () {
     const paddle = (new Paddle());
-    assert.equal(paddle.x, 250);
-    assert.equal(paddle.y, 480);
+    assert.equal(paddle.x, 400);
+    assert.equal(paddle.y, 470);
     assert.equal(paddle.width, 100);
     assert.equal(paddle.height, 20);
   });
@@ -21,9 +21,9 @@ describe('Paddle', function () {
   it('should move when move() is called', function () {
     const paddle = (new Paddle());
     paddle.moveRight();
-    assert.equal(paddle.x, 270);
+    assert.equal(paddle.x, 400);
     paddle.moveLeft();
-    assert.equal(paddle.x, 250);
+    assert.equal(paddle.x, 380);
   });
 
   it('should know of its own dimensions', function () {
@@ -33,9 +33,9 @@ describe('Paddle', function () {
     var widthMax = dimensions[0][1]
     var heightMin = dimensions[1][0]
     var heightMax = dimensions[1][1]
-    assert.equal(widthMin, 200 );
-    assert.equal(widthMax, 300 );
-    assert.equal(heightMin, 470 );
-    assert.equal(heightMax, 490 );
+    assert.equal(widthMin, 350);
+    assert.equal(widthMax, 450);
+    assert.equal(heightMin, 460);
+    assert.equal(heightMax, 480);
   });
 });
